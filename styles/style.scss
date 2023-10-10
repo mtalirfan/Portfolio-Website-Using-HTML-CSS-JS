@@ -955,7 +955,7 @@ footer {
     }
   }
 
-  footer {
+  footer .tooltip {
     visibility: hidden;
   }
 
@@ -974,7 +974,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .section {
     padding: 7rem 3rem;
   }
@@ -986,7 +986,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .about-container {
     grid-template-columns: 1fr;
     .right-about {
