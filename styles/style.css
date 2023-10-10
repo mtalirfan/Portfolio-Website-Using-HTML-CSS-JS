@@ -120,7 +120,7 @@ section {
 .controls .control.active-btn i {
   color: var(--color-white);
 }
-.controls .control {
+.controls .menu-buttons {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-6);
@@ -142,7 +142,7 @@ section {
     transform: translateX(0);
   }
 }
-.controls .control i {
+.controls .menu-buttons i {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
@@ -211,6 +211,14 @@ section {
   visibility: visible;
   transition: opacity 0.5s;
   opacity: 1;
+}
+
+.theme-btn:hover {
+  background-color: var(--color-white);
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:hover i {
+  color: var(--color-primary);
 }
 
 .tooltip {
@@ -758,27 +766,6 @@ section {
   transition: all 0.4s ease-out;
 }
 
-.theme-btn {
-  top: 3%;
-  right: 3%;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: var(--color-grey-6);
-  position: fixed;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.4s ease-in-out;
-}
-.theme-btn i {
-  font-size: 1.2rem;
-  color: var(--color-grey-2);
-  pointer-events: none;
-}
-
 .main-title {
   text-align: center;
 }
@@ -826,10 +813,6 @@ footer {
   }
   header .right-header {
     padding: 0 !important;
-  }
-  .theme-btn {
-    width: 40px;
-    height: 40px;
   }
   .header-content {
     grid-template-columns: 1fr;
@@ -888,7 +871,7 @@ footer {
     margin-left: 0;
     margin-top: 1.5rem;
   }
-  footer {
+  footer .tooltip {
     visibility: hidden;
   }
   .controls {
@@ -904,8 +887,11 @@ footer {
   .controls .control {
     margin: 0.75rem 1rem;
   }
+  .controls .theme-btn {
+    margin: 0.75rem 2rem;
+  }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .section {
     padding: 7rem 3rem;
   }
@@ -913,7 +899,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .about-container {
     grid-template-columns: 1fr;
   }
