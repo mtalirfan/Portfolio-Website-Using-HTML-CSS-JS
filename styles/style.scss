@@ -839,7 +839,7 @@ section {
 }
 
 // Footer
-footer {
+.footer {
   height: 50px;
   // position: fixed
   bottom: 0;
@@ -939,8 +939,11 @@ footer {
     }
   }
 
-  footer .tooltip {
-    visibility: hidden;
+  .footer {
+    display: none;
+  }
+  .tooltip {
+    display: none;
   }
 
   .controls {
