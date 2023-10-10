@@ -37,3 +37,33 @@ function PageTransitions() {
 }
 
 PageTransitions();
+
+// function scroll() {
+//   document.addEventListener("scroll", function () {
+//     let target;
+//     if (window.scrollY >= window.scrollMaxY) {
+//       target = document.querySelector(".active-btn").nextElementSibling;
+//     } else if (window.scrollY <= 0) {
+//       target = document.querySelector(".active-btn").previousElementSibling;
+//     }
+//     target && target.click();
+//   });
+// }
+
+function PageThemeTransitions() {
+  [...document.querySelectorAll(".control")].forEach((button) => {
+    button.addEventListener("click", function () {
+      document.querySelector(".active-btn").classList.remove("active-btn");
+      this.classList.add("active-btn");
+      document.querySelector(".active").classList.remove("active");
+      document.getElementById(button.dataset.id).classList.add("active");
+      // window.scrollTo(0, 1);
+    });
+  });
+  document.querySelector(".theme-btn").addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+  });
+}
+
+PageThemeTransitions();
+// scroll();
