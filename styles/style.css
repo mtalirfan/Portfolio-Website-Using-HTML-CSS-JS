@@ -84,15 +84,6 @@ section {
 
 .active {
   display: block;
-  animation: scaleAnim 0.75s ease-in-out;
-}
-@keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
 }
 
 .controls {
@@ -269,6 +260,15 @@ section {
   flex-direction: column;
   justify-content: center;
   padding-right: 18rem;
+  animation: scaleAnim 0.8s ease-in-out;
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
 .header-content .right-header .name {
   font-size: 3rem;
@@ -617,4 +617,21 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 5rem;
+}
+
+footer {
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-black);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
