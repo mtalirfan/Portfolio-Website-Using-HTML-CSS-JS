@@ -11,7 +11,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.mtalirfan.engineer" />
     <meta property="og:description" content="mtalirfan Portfolio Website" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="icons/android-chrome-512x512.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,9 +24,27 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
 
-    <!-- TODO TITLE ICON and METADATA-->
     <title>mtalirfan Portfolio</title>
-    <link rel="icon" href="" />
+    <link rel="icon" href="icons/favicon.ico" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/site.webmanifest" />
   </head>
 
   <body class="main-content">
@@ -431,8 +449,13 @@
                 </div>
               </div>
             </div>
-            <div class="right-contact">
-              <form action="" class="contact-form">
+            <!-- <div class="right-contact">
+              <form
+                action="contact-form.php"
+                method="POST"
+                class="contact-form"
+                id="contact-form"
+              >
                 <div class="input-control i-c-2">
                   <input type="text" required placeholder="NAME" />
                   <input type="email" required placeholder="EMAIL" />
@@ -449,14 +472,17 @@
                     placeholder="Message..."
                   ></textarea>
                 </div>
-                <div class="submit-btn">
-                  <a href="" class="main-btn">
-                    <span class="btn-text">Resumé</span>
+                <div
+                  onclick="document.getElementById('contact-form').submit();"
+                  class="submit-btn"
+                >
+                  <div class="main-btn">
+                    <span class="btn-text">Submit</span>
                     <div class="btn-icon"><i class="fas fa-download"></i></div>
-                  </a>
+                  </div>
                 </div>
               </form>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -473,7 +499,7 @@
       </div>
       <div class="menu-buttons control control-3" data-id="portfolio">
         <i class="fas fa-briefcase"></i>
-        <span class="tooltip tooltip-3">Portfolio</span>
+        <span class="tooltip tooltip-3">Projects</span>
       </div>
       <div class="menu-buttons control control-4" data-id="blogs">
         <i class="far fa-newspaper"></i>

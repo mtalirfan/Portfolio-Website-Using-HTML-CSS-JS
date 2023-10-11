@@ -840,7 +840,7 @@ section {
 
 // Footer
 .footer {
-  height: 50px;
+  height: 60px;
   // position: fixed
   bottom: 0;
   left: 0;
@@ -939,9 +939,15 @@ section {
     }
   }
 
-  // .footer {
-  //   display: none;
-  // }
+  .footer {
+    // display: none;
+    // top: auto;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    font-size: 1.2rem;
+    background-color: var(--color-primary);
+  }
   .tooltip {
     display: none;
   }
