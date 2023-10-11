@@ -869,7 +869,7 @@ section {
 
   .header-content {
     grid-template-columns: 1fr;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
   }
 
   .left-header {
@@ -949,6 +949,7 @@ section {
   .controls {
     top: 0;
     bottom: auto;
+    // margin-bottom: 1rem;
     flex-direction: row;
     justify-content: center;
     left: 50%;
@@ -958,6 +959,7 @@ section {
     .menu-buttons {
       width: 40px;
       height: 40px;
+      animation: none !important;
     }
     .control {
       margin: 0.75rem 0.5rem;
@@ -997,22 +999,22 @@ section {
 
   .timeline {
     grid-template-columns: 1fr;
-    padding-bottom: 6rem;
+    padding-top: 6rem;
   }
 
   .portfolios {
     grid-template-columns: 1fr;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
   }
 
   .blogs {
     grid-template-columns: 1fr;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
   }
 
   .contact-container {
     grid-template-columns: 1fr;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
   }
 
   .contact-content-con {
@@ -1032,7 +1034,7 @@ section {
   }
 
   .section {
-    padding: 2rem 2.5rem;
+    padding: 6rem 2.5rem;
   }
 
   .main-title {
