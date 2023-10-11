@@ -947,19 +947,23 @@ section {
   }
 
   .controls {
-    top: auto;
-    bottom: 0;
+    top: 0;
+    bottom: auto;
     flex-direction: row;
     justify-content: center;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     background-color: var(--color-black);
+    .menu-buttons {
+      width: 40px;
+      height: 40px;
+    }
     .control {
-      margin: 0.75rem 1rem;
+      margin: 0.75rem 0.5rem;
     }
     .theme-btn {
-      margin: 0.75rem 2rem;
+      margin: 0.75rem 1rem;
     }
   }
 }
