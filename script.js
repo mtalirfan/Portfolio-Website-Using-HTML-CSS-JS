@@ -48,6 +48,13 @@ function PageThemeTransitions() {
   });
   document.querySelector(".theme-btn").addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
+    document.querySelector(".theme-btn").classList.toggle("light-mode");
+    document.querySelectorAll(".section-shape").forEach((shape) => {
+      shape.classList.toggle("light-mode");
+    });
+    document.querySelectorAll(".shape-text").forEach((shapeText) => {
+      shapeText.classList.toggle("light-mode");
+    });
   });
 }
 
