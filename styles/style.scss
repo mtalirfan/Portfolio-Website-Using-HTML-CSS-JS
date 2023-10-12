@@ -546,7 +546,7 @@ section {
 
 .portfolios {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
   .portfolio-item {
@@ -555,7 +555,7 @@ section {
     img {
       width: 100%;
       height: 300px;
-      object-fit: cover;
+      object-fit: fill;
       border-radius: 15px;
     }
     .hover-items {
@@ -577,6 +577,7 @@ section {
         font-size: 1.5rem;
         color: var(--color-white);
         margin-bottom: 1.5rem;
+        text-align: center;
       }
       .icons {
         display: flex;
@@ -620,7 +621,7 @@ section {
 // Blogs
 .blogs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-top: 3rem;
   .blog {
