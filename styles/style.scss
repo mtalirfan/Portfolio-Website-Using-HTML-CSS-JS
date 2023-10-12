@@ -533,6 +533,23 @@ section {
     p {
       color: var(--color-grey-2);
     }
+    ul {
+      padding-left: 1rem;
+      li {
+        padding: 0.25rem 0;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0.7rem;
+          left: -1rem;
+          width: 0.5rem;
+          height: 0.5rem;
+          background-color: var(--color-secondary);
+          border-radius: 50%;
+        }
+      }
+    }
   }
 }
 
@@ -784,7 +801,7 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  clip-path: polygon(75% 0, 100% 0, 100% 100%, 90% 100%);
+  clip-path: polygon(80% 0, 100% 0, 100% 100%, 92.5% 100%);
 }
 
 .section-shape {

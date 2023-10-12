@@ -493,6 +493,23 @@ section {
 .timeline .timeline-item p {
   color: var(--color-grey-2);
 }
+.timeline .timeline-item ul {
+  padding-left: 1rem;
+}
+.timeline .timeline-item ul li {
+  padding: 0.25rem 0;
+  position: relative;
+}
+.timeline .timeline-item ul li::before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  left: -1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+}
 
 .port-text {
   padding: 2rem 0;
@@ -705,8 +722,8 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(75% 0, 100% 0, 100% 100%, 90% 100%);
-          clip-path: polygon(75% 0, 100% 0, 100% 100%, 90% 100%);
+  -webkit-clip-path: polygon(80% 0, 100% 0, 100% 100%, 92.5% 100%);
+          clip-path: polygon(80% 0, 100% 0, 100% 100%, 92.5% 100%);
 }
 
 .section-shape {
