@@ -1,0 +1,119 @@
+.contact-shape {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  clip-path: polygon(80% 0, 100% 0, 100% 100%, 92.5% 100%);
+}
+
+.section-shape {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  clip-path: polygon(25% 0%, 0% 300px, 0% 0%);
+}
+
+.shape-text {
+  color: var(--color-secondary);
+  left: 50px;
+  top: 60px;
+  position: absolute;
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-shape.light-mode {
+  clip-path: polygon(100% 0, 75% 0, 100% 300px) !important;
+}
+
+.shape-text.light-mode {
+  color: var(--color-white);
+  display: block;
+}
+
+// A weird cat
+.cat-drawing {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  margin-left: -50px;
+  bottom: 0;
+  left: 55%;
+  transition: all 0.4s ease-in-out;
+}
+
+.cat-face {
+  background-color: #4e4299;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+}
+.cat-ear {
+  background-color: #4e4299;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25px 25px 25px;
+  border-color: transparent transparent #4e4299 transparent;
+  position: absolute;
+  top: 5px;
+}
+.cat-ear.left {
+  left: 13px;
+  transform: rotate(20deg);
+}
+.cat-ear.right {
+  right: 13px;
+  transform: rotate(-20deg);
+}
+
+.cat-eye {
+  background-color: #000;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+}
+
+.cat-eye.left {
+  left: 22px;
+}
+.cat-eye.right {
+  right: 22px;
+}
+
+.cat-meow {
+  // background-color: #000;
+  width: 20px;
+  height: 5px;
+  // border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 45px;
+  color: #000;
+  font-weight: 800;
+}
+
+.cat-meow-text {
+  display: inline-block;
+  left: 50px;
+}
+
+// social, music note
+.music-note,
+.hashtag {
+  transition: all 0.4s ease-in-out;
+  color: var(--color-white);
+  margin-top: 1rem;
+}

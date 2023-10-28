@@ -1,10 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-}
-
 :root {
   --color-primary: #191d2b;
   --color-secondary: #6a5acd;
@@ -35,6 +28,13 @@
   --color-grey-5: #d1d1d1;
   --color-grey-6: #e7e7e7;
   --color-black: #7e7e7e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 body {
@@ -73,26 +73,34 @@ section {
   background-color: var(--color-primary);
 }
 
-.sec-1 {
-  display: none;
-  transform: translateY(0) scale(1);
+.main-title {
+  text-align: center;
+}
+.main-title h3 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.main-title h3 span {
+  color: var(--color-secondary);
+}
+.main-title .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-6);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 5rem;
 }
 
-.sec-2 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.sec-3 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.sec-4 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
+.sec-1,
+.sec-2,
+.sec-3,
+.sec-4,
 .sec-5 {
   display: none;
   transform: translateY(0) scale(1);
@@ -100,141 +108,6 @@ section {
 
 .active {
   display: block;
-}
-
-.controls {
-  position: fixed;
-  z-index: 10;
-  top: 50%;
-  right: 3%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50%);
-}
-.controls .control.active-btn {
-  background-color: var(--color-secondary);
-  transition: all 0.4s ease-in-out;
-}
-.controls .control.active-btn i {
-  color: var(--color-white);
-}
-.controls .menu-buttons {
-  padding: 1rem;
-  cursor: pointer;
-  background-color: var(--color-grey-6);
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0.7rem 0;
-  box-shadow: var(--box-shadow-1);
-  animation: control 0.4s ease-in-out;
-}
-@keyframes control {
-  0% {
-    transform: translateX(200%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-.controls .menu-buttons i {
-  font-size: 1.2rem;
-  color: var(--color-grey-2);
-  pointer-events: none;
-}
-
-.control-1:hover {
-  background-color: var(--color-secondary-2);
-  transition: all 0.1s ease-in-out;
-}
-.control-1:hover i {
-  color: var(--color-white);
-}
-.control-1:hover .tooltip-1 {
-  visibility: visible;
-  transition: opacity 0.5s;
-  opacity: 1;
-}
-
-.control-2:hover {
-  background-color: var(--color-secondary-2);
-  transition: all 0.1s ease-in-out;
-}
-.control-2:hover i {
-  color: var(--color-white);
-}
-.control-2:hover .tooltip-2 {
-  visibility: visible;
-  transition: opacity 0.5s;
-  opacity: 1;
-}
-
-.control-3:hover {
-  background-color: var(--color-secondary-2);
-  transition: all 0.1s ease-in-out;
-}
-.control-3:hover i {
-  color: var(--color-white);
-}
-.control-3:hover .tooltip-3 {
-  visibility: visible;
-  transition: opacity 0.5s;
-  opacity: 1;
-}
-
-.control-4:hover {
-  background-color: var(--color-secondary-2);
-  transition: all 0.1s ease-in-out;
-}
-.control-4:hover i {
-  color: var(--color-white);
-}
-.control-4:hover .tooltip-4 {
-  visibility: visible;
-  transition: opacity 0.5s;
-  opacity: 1;
-}
-
-.control-5:hover {
-  background-color: var(--color-secondary-2);
-  transition: all 0.1s ease-in-out;
-}
-.control-5:hover i {
-  color: var(--color-white);
-}
-.control-5:hover .tooltip-5 {
-  visibility: visible;
-  transition: opacity 0.5s;
-  opacity: 1;
-}
-
-.theme-btn:hover {
-  background-color: var(--color-white);
-  transition: all 0.1s ease-in-out;
-}
-.theme-btn:hover i {
-  color: var(--color-primary);
-}
-
-.tooltip {
-  display: block;
-  visibility: hidden;
-  width: 80px;
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  margin: 10px;
-  opacity: 0;
-  position: absolute;
-  z-index: 1;
-  right: 100%;
 }
 
 .header-content {
@@ -422,18 +295,6 @@ section {
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .cpp {
   width: 50%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .english {
-  width: 90%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .urdu {
-  width: 90%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .spanish {
-  width: 10%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .saraiki {
-  width: 60%;
 }
 .about-stats .skill-text {
   padding-top: 0.5rem;
@@ -757,46 +618,141 @@ section {
   justify-content: center;
 }
 
-.contact-shape {
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-secondary);
-  position: absolute;
+.footer {
+  height: 60px;
+  bottom: 0;
   left: 0;
-  top: 0;
-  z-index: -1;
-  clip-path: polygon(80% 0, 100% 0, 100% 100%, 92.5% 100%);
-}
-
-.section-shape {
   width: 100%;
-  height: 100%;
-  background-color: var(--color-secondary);
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  clip-path: polygon(25% 0%, 0% 300px, 0% 0%);
-}
-
-.shape-text {
-  color: var(--color-secondary);
-  left: 50px;
-  top: 60px;
-  position: absolute;
-  display: none;
+  background-color: var(--color-black);
   font-size: 1.5rem;
-  font-weight: 800;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
 }
 
-.section-shape.light-mode {
-  clip-path: polygon(100% 0, 75% 0, 100% 300px) !important;
+.footer-column {
+  flex: 1;
+  text-align: center;
 }
 
-.shape-text.light-mode {
+.controls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+.controls .control.active-btn {
+  background-color: var(--color-secondary);
+  transition: all 0.4s ease-in-out;
+}
+.controls .control.active-btn i {
   color: var(--color-white);
-  display: block;
+}
+.controls .menu-buttons {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--color-grey-6);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow-1);
+  animation: control 0.4s ease-in-out;
+}
+@keyframes control {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.controls .menu-buttons i {
+  font-size: 1.2rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
+.control-1:hover {
+  background-color: var(--color-secondary-2);
+  transition: all 0.1s ease-in-out;
+}
+.control-1:hover i {
+  color: var(--color-white);
+}
+.control-1:hover .tooltip-1 {
+  visibility: visible;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.control-2:hover {
+  background-color: var(--color-secondary-2);
+  transition: all 0.1s ease-in-out;
+}
+.control-2:hover i {
+  color: var(--color-white);
+}
+.control-2:hover .tooltip-2 {
+  visibility: visible;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.control-3:hover {
+  background-color: var(--color-secondary-2);
+  transition: all 0.1s ease-in-out;
+}
+.control-3:hover i {
+  color: var(--color-white);
+}
+.control-3:hover .tooltip-3 {
+  visibility: visible;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.control-4:hover {
+  background-color: var(--color-secondary-2);
+  transition: all 0.1s ease-in-out;
+}
+.control-4:hover i {
+  color: var(--color-white);
+}
+.control-4:hover .tooltip-4 {
+  visibility: visible;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.control-5:hover {
+  background-color: var(--color-secondary-2);
+  transition: all 0.1s ease-in-out;
+}
+.control-5:hover i {
+  color: var(--color-white);
+}
+.control-5:hover .tooltip-5 {
+  visibility: visible;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.theme-btn:hover {
+  background-color: var(--color-white);
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:hover i {
+  color: var(--color-primary);
 }
 
 .btn-ctn {
@@ -846,46 +802,62 @@ section {
   transition: all 0.4s ease-out;
 }
 
-.main-title {
+.tooltip {
+  display: block;
+  visibility: hidden;
+  width: 80px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
   text-align: center;
-}
-.main-title h3 {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 3rem;
-  font-weight: 700;
-}
-.main-title h3 span {
-  color: var(--color-secondary);
-}
-.main-title .bg-text {
+  border-radius: 6px;
+  padding: 5px 0;
+  margin: 10px;
+  opacity: 0;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  color: var(--color-grey-6);
-  transition: all 0.4s ease-in-out;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  font-weight: 800;
-  font-size: 5rem;
+  z-index: 1;
+  right: 100%;
 }
 
-.footer {
-  height: 60px;
-  bottom: 0;
-  left: 0;
+.contact-shape {
   width: 100%;
-  background-color: var(--color-black);
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.4s ease-in-out;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  clip-path: polygon(80% 0, 100% 0, 100% 100%, 92.5% 100%);
 }
 
-.footer-column {
-  flex: 1;
-  text-align: center;
+.section-shape {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  clip-path: polygon(25% 0%, 0% 300px, 0% 0%);
+}
+
+.shape-text {
+  color: var(--color-secondary);
+  left: 50px;
+  top: 60px;
+  position: absolute;
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section-shape.light-mode {
+  clip-path: polygon(100% 0, 75% 0, 100% 300px) !important;
+}
+
+.shape-text.light-mode {
+  color: var(--color-white);
+  display: block;
 }
 
 .cat-drawing {

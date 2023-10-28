@@ -1,0 +1,201 @@
+//Controls
+.controls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+
+  .control.active-btn {
+    background-color: var(--color-secondary);
+    transition: all 0.4s ease-in-out;
+    i {
+      color: var(--color-white);
+    }
+  }
+  .menu-buttons {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-grey-6);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem 0;
+    box-shadow: var(--box-shadow-1);
+
+    animation: control 0.4s ease-in-out;
+    @keyframes control {
+      0% {
+        transform: translateX(200%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    i {
+      font-size: 1.2rem;
+      color: var(--color-grey-2);
+      pointer-events: none;
+    }
+  }
+}
+
+.control-1 {
+  &:hover {
+    background-color: var(--color-secondary-2);
+    transition: all 0.1s ease-in-out;
+    i {
+      color: var(--color-white);
+    }
+    .tooltip-1 {
+      visibility: visible;
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
+  }
+}
+
+.control-2 {
+  &:hover {
+    background-color: var(--color-secondary-2);
+    transition: all 0.1s ease-in-out;
+    i {
+      color: var(--color-white);
+    }
+    .tooltip-2 {
+      visibility: visible;
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
+  }
+}
+
+.control-3 {
+  &:hover {
+    background-color: var(--color-secondary-2);
+    transition: all 0.1s ease-in-out;
+    i {
+      color: var(--color-white);
+    }
+    .tooltip-3 {
+      visibility: visible;
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
+  }
+}
+
+.control-4 {
+  &:hover {
+    background-color: var(--color-secondary-2);
+    transition: all 0.1s ease-in-out;
+    i {
+      color: var(--color-white);
+    }
+    .tooltip-4 {
+      visibility: visible;
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
+  }
+}
+
+.control-5 {
+  &:hover {
+    background-color: var(--color-secondary-2);
+    transition: all 0.1s ease-in-out;
+    i {
+      color: var(--color-white);
+    }
+    .tooltip-5 {
+      visibility: visible;
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
+  }
+}
+
+.theme-btn {
+  &:hover {
+    background-color: var(--color-white);
+    transition: all 0.1s ease-in-out;
+    i {
+      color: var(--color-primary);
+    }
+  }
+}
+
+// Buttons
+.btn-ctn {
+  display: flex;
+  align-self: flex-start;
+}
+.main-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--color-secondary);
+  display: flex;
+  align-self: center;
+  align-items: center;
+  overflow: hidden;
+  .btn-text {
+    padding: 0 2rem;
+  }
+  .btn-icon {
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.4s ease-out;
+    z-index: -1;
+  }
+  &:hover {
+    transition: all 0.4s ease-out;
+    &::before {
+      transform: translateX(0);
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-secondary);
+      transition: all 0.4s ease-out;
+    }
+  }
+}
+
+// Tooltips
+.tooltip {
+  display: block;
+
+  visibility: hidden;
+  width: 80px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin: 10px;
+
+  opacity: 0;
+
+  position: absolute;
+  z-index: 1;
+  right: 100%;
+}
