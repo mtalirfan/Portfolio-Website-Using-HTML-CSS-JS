@@ -1,13 +1,6 @@
 window.addEventListener("load", function () {
   if (localStorage.getItem("theme") === "light") {
-    document.body.classList.toggle("light-mode");
-    document.querySelector(".theme-btn").classList.toggle("light-mode");
-    document.querySelectorAll(".section-shape").forEach((shape) => {
-      shape.classList.toggle("light-mode");
-    });
-    document.querySelectorAll(".shape-text").forEach((shapeText) => {
-      shapeText.classList.toggle("light-mode");
-    });
+    themeClassToggle();
   } else {
     localStorage.setItem("theme", "dark");
   }
@@ -26,20 +19,24 @@ const pageTransitions = () => {
 
 const themeToggle = () => {
   document.querySelector(".theme-btn").addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-
-    if (localStorage.getItem("theme") === "dark") {
+    let theme = localStorage.getItem("theme");
+    if (theme === "dark") {
       localStorage.setItem("theme", "light");
-    } else if (localStorage.getItem("theme") === "light") {
+    } else if (theme === "light") {
       localStorage.setItem("theme", "dark");
     }
-    document.querySelector(".theme-btn").classList.toggle("light-mode");
-    document.querySelectorAll(".section-shape").forEach((shape) => {
-      shape.classList.toggle("light-mode");
-    });
-    document.querySelectorAll(".shape-text").forEach((shapeText) => {
-      shapeText.classList.toggle("light-mode");
-    });
+    themeClassToggle();
+  });
+};
+
+const themeClassToggle = () => {
+  document.body.classList.toggle("light-mode");
+  document.querySelector(".theme-btn").classList.toggle("light-mode");
+  document.querySelectorAll(".section-shape").forEach((shape) => {
+    shape.classList.toggle("light-mode");
+  });
+  document.querySelectorAll(".shape-text").forEach((shapeText) => {
+    shapeText.classList.toggle("light-mode");
   });
 };
 
