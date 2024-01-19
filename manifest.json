@@ -3,8 +3,8 @@
   "short_name": "mtalirfan",
   "description": "mtalirfan Portfolio Website",
   "start_url": ".",
-  "theme_color": "#4e4299",
-  "background_color": "#191d2b",
+  "theme_color": "#7856ff",
+  "background_color": "#0b0d12",
   "display": "standalone",
   "orientation": "portrait",
   "icons": [
