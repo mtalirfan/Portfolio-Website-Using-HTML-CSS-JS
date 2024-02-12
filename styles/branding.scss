@@ -6,10 +6,6 @@
 }
 @import "_media";
 @import "_colours";
-:root {
-  --color-grey: #808080;
-  --box-shadow-logo: 0 5px 15px 3px rgba(255, 255, 255, 0.2);
-}
 
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -33,7 +29,7 @@ a {
 .logo {
   margin-bottom: 2rem;
   img {
-    box-shadow: var(--box-shadow-logo);
+    box-shadow: var(--box-shadow-2);
     width: 6rem;
     height: 6rem;
   }
@@ -131,6 +127,10 @@ a {
   }
   .purple2 {
     background-color: var(--color-secondary);
+    color: var(--color-white);
+  }
+  .purple3 {
+    background-color: var(--color-secondary-3);
     color: var(--color-white);
   }
   .white {

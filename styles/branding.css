@@ -184,7 +184,9 @@
   --color-primary: #0b0d12;
   --color-secondary: #7856ff;
   --color-secondary-2: #6c4de6;
+  --color-secondary-3: #947fe4;
   --color-white: #fff;
+  --color-grey: #808080;
   --color-grey-0: #faf9f9;
   --color-grey-1: #f4f2f2;
   --color-grey-2: #f0eeee;
@@ -196,6 +198,7 @@
   --color-footer: #000;
   --br-sm-2: 0.2rem;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
+  --box-shadow-2: 0 5px 15px 3px rgba(255, 255, 255, 0.2);
 }
 
 .light-mode {
@@ -212,11 +215,6 @@
   --color-grey-6: #cfcfcf;
   --color-black: #fff;
   --color-footer: #808080;
-}
-
-:root {
-  --color-grey: #808080;
-  --box-shadow-logo: 0 5px 15px 3px rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -241,7 +239,7 @@ a {
   margin-bottom: 2rem;
 }
 .logo img {
-  box-shadow: var(--box-shadow-logo);
+  box-shadow: var(--box-shadow-2);
   width: 6rem;
   height: 6rem;
 }
@@ -554,6 +552,10 @@ a {
 }
 .palette .purple2 {
   background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+.palette .purple3 {
+  background-color: var(--color-secondary-3);
   color: var(--color-white);
 }
 .palette .white {
