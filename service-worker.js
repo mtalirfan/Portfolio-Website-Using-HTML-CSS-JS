@@ -4,13 +4,24 @@ self.addEventListener("install", (e) => {
     caches.open("static").then((cache) => {
       return cache.addAll([
         "./",
-        "/images/face.jpg",
-        "/images/othercertificates.jpg",
+        "/images/coursera.webp",
+        "/images/credly.webp",
+        "/images/CS-114.webp",
+        "/images/EE-103.webp",
+        "/images/EE-227.webp",
+        "/images/face.webp",
+        "/images/kangaroo.webp",
+        "/images/ME-115.webp",
+        "/images/ME-330.webp",
+        "/images/othercertificates.webp",
+        "/images/RIME-222.webp",
         "/icons/android-chrome-192x192.png",
         "/icons/android-chrome-512x512.png",
         "/styles/style.css",
         "/404.html",
+        "/branding/index.html",
         "/styles/404.css",
+        "/styles/branding.css",
         "/script.js",
       ]);
     })
