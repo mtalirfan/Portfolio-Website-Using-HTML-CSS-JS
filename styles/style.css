@@ -3,35 +3,48 @@
   --color-secondary: #7856ff;
   --color-secondary-2: #6c4de6;
   --color-secondary-3: #947fe4;
-  --color-white: #fff;
+  --color-white: #ffffff;
   --color-grey: #808080;
   --color-grey-0: #faf9f9;
   --color-grey-1: #f4f2f2;
   --color-grey-2: #f0eeee;
-  --color-grey-3: #ccc;
-  --color-grey-4: #999;
-  --color-grey-5: #777;
-  --color-grey-6: #222;
-  --color-black: #000;
-  --color-footer: #000;
+  --color-grey-3: #cccccc;
+  --color-grey-4: #999999;
+  --color-grey-5: #777777;
+  --color-grey-6: #222222;
+  --color-black: #000000;
+  --color-footer: #000000;
   --br-sm-2: 0.2rem;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
   --box-shadow-2: 0 5px 15px 3px rgba(255, 255, 255, 0.2);
+  --color-dark-orange-les: #d52d00;
+  --color-orange-les: #ef7627;
+  --color-light-orange-les: #ff9a56;
+  --color-pink-les: #d162a4;
+  --color-dusty-pink-les: #b55690;
+  --color-dark-rose-les: #a30262;
+  --color-blue-trans: #5bcefa;
+  --color-pink-trans: #f5a9b8;
+  --color-grey-ace: #a3a3a3;
+  --color-purple-ace: #800080;
+  --color-yellow-nb: #fcf434;
+  --color-purple-nb: #9c59d1;
+  --color-black-nb: #2c2c2c;
 }
 
 .light-mode {
   --color-primary: #ffffff;
   --color-secondary: #6c4de6;
   --color-secondary-2: #7856ff;
-  --color-white: #000;
-  --color-grey-0: #222;
+  --color-white: #000000;
+  --color-grey-0: #222222;
   --color-grey-1: #2f2f2f;
   --color-grey-2: #7e7e7e;
-  --color-grey-3: #ccc;
+  --color-grey-3: #cccccc;
   --color-grey-4: #b1b1b1;
   --color-grey-5: #808080;
   --color-grey-6: #cfcfcf;
-  --color-black: #fff;
+  --color-black: #ffffff;
   --color-footer: #808080;
 }
 
@@ -242,7 +255,6 @@ section {
 }
 .about-container .left-about h4 {
   font-size: 2rem;
-  text-transform: uppercase;
 }
 
 .about-stats {
@@ -423,7 +435,7 @@ section {
 }
 
 .port-text {
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
   font-size: 2rem;
 }
@@ -974,7 +986,7 @@ section {
   visibility: visible;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   header {
     min-height: 100vh;
     width: 100%;
@@ -1084,7 +1096,7 @@ section {
     margin: 0.75rem 1rem;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .section {
     padding: 7rem 3rem;
   }
@@ -1092,7 +1104,7 @@ section {
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .about-container {
     grid-template-columns: 1fr;
   }
@@ -1113,6 +1125,10 @@ section {
   .portfolios {
     grid-template-columns: 1fr;
     padding-bottom: 4rem;
+  }
+  .palette-container {
+    grid-template-columns: 1fr;
+    padding-bottom: 1rem;
   }
   .blogs {
     grid-template-columns: 1fr;
