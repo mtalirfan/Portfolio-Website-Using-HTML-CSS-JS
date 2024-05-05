@@ -412,7 +412,7 @@ a {
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   justify-content: center;
 }
 .contact-content-con .left-contact .contact-icon a {
@@ -717,6 +717,16 @@ a {
 .palette .black-nb {
   background-color: var(--color-black-nb);
   color: var(--color-white);
+}
+.palette img {
+  width: 300px;
+  height: 19.8rem;
+  object-fit: fill;
+  transition: all 0.4s ease-in-out;
+  filter: none;
+}
+.palette img:hover {
+  filter: hue-rotate(90deg);
 }
 
 /* .palette-colour {
