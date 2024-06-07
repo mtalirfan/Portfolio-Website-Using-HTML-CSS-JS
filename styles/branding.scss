@@ -71,7 +71,6 @@ a {
 
 .social-handle {
   position: relative;
-
   &::after {
     content: attr(title);
     position: absolute;
@@ -202,6 +201,8 @@ a {
     height: 19.8rem;
     object-fit: fill;
     transition: all 0.4s ease-in-out;
+  }
+  .lovepurple {
     filter: none;
     &:hover {
       filter: hue-rotate(90deg);

@@ -372,7 +372,7 @@ a {
 
 .contact-content-con {
   display: flex;
-  padding-top: 3.5rem;
+  padding-top: 1rem;
 }
 .contact-content-con h3 {
   margin-top: 2rem;
@@ -723,9 +723,11 @@ a {
   height: 19.8rem;
   object-fit: fill;
   transition: all 0.4s ease-in-out;
+}
+.palette .lovepurple {
   filter: none;
 }
-.palette img:hover {
+.palette .lovepurple:hover {
   filter: hue-rotate(90deg);
 }
 
