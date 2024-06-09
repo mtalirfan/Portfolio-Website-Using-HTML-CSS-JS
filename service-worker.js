@@ -4,6 +4,7 @@ self.addEventListener("install", (e) => {
     caches.open("static").then((cache) => {
       return cache.addAll([
         "./",
+        "/images/braille.png",
         "/images/coursera.webp",
         "/images/credly.webp",
         "/images/CS-114.webp",
@@ -11,10 +12,12 @@ self.addEventListener("install", (e) => {
         "/images/EE-227.webp",
         "/images/face.webp",
         "/images/kangaroo.webp",
+        "/images/lovepurple.webp",
         "/images/ME-115.webp",
         "/images/ME-330.webp",
         "/images/othercertificates.webp",
         "/images/RIME-222.webp",
+        "/images/suit.webp",
         "/icons/squared/android-chrome-192x192.png",
         "/icons/squared/android-chrome-512x512.png",
         "/styles/style.css",
