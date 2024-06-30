@@ -20,6 +20,7 @@ self.addEventListener("install", (e) => {
         "/images/suit.webp",
         "/icons/squared/android-chrome-192x192.png",
         "/icons/squared/android-chrome-512x512.png",
+        "/icons/favicon.ico",
         "/styles/style.css",
         "/404.html",
         "/branding/index.html",

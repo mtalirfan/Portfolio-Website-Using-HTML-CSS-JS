@@ -24,10 +24,22 @@ a {
   font-family: inherit;
 }
 
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .four-o-four {
+  flex: 2;
   font-size: 10rem;
   font-weight: 800;
   color: #6c4de6;
+}
+
+.found {
+  flex: 3;
 }
 
 .home-button {
