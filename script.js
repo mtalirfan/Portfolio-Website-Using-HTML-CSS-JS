@@ -46,10 +46,6 @@ const pageTransitions = () => {
     button.addEventListener("click", function () {
       page = this.dataset.id;
       setPage(page);
-      // document.querySelector(".active-btn").classList.remove("active-btn");
-      // this.classList.add("active-btn");
-      // document.querySelector(".active").classList.remove("active");
-      // document.getElementById(button.dataset.id).classList.add("active");
     });
   });
 };

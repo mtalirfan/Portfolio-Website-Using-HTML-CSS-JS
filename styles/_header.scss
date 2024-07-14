@@ -24,7 +24,6 @@
       width: 50%;
       margin-left: 4rem;
       margin-right: 1rem;
-      // background-color: var(--color-black);
       transition: all 0.4s ease-in-out;
       img {
         width: 100%;
@@ -45,6 +44,7 @@
     flex-direction: column;
     justify-content: center;
     padding-right: 18rem;
+    padding-top: 2rem;
 
     animation: scaleAnim 0.8s ease-in-out;
     @keyframes scaleAnim {

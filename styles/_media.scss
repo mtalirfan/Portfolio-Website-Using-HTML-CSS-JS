@@ -99,10 +99,8 @@
 
   .footer {
     display: block;
-    // top: auto;
     bottom: 0;
     width: 100%;
-    // left: 0;
     font-size: 1.2rem;
     background-color: var(--color-primary);
   }
@@ -114,7 +112,6 @@
   .controls {
     top: 0;
     bottom: auto;
-    // margin-bottom: 1rem;
     flex-direction: row;
     justify-content: center;
     left: 50%;
