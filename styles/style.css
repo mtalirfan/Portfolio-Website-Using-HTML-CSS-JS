@@ -322,6 +322,7 @@ section {
   font-size: 1.2rem;
   font-weight: 600;
   padding-bottom: 0.3rem;
+  margin-top: 1rem;
 }
 .about-stats .skill-text p {
   line-height: 2rem;
