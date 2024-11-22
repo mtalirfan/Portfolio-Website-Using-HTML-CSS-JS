@@ -276,6 +276,7 @@ section {
   --br-sm-2: 0.2rem;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
   --box-shadow-2: 0 5px 15px 3px rgba(255, 255, 255, 0.2);
+  --color-rebecca-purple: #663399;
   --color-dark-orange-les: #d52d00;
   --color-orange-les: #ef7627;
   --color-light-orange-les: #ff9a56;
@@ -632,6 +633,39 @@ a {
   margin-bottom: 2rem;
 }
 
+.heart {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: var(--color-rebecca-purple);
+}
+
+.heart::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
 /* Palette */
 .palette {
   width: auto;
@@ -647,6 +681,10 @@ a {
   width: 300px;
   height: 100%;
   text-align: center;
+}
+.palette .rebecca-purple {
+  background-color: var(--color-rebecca-purple);
+  color: var(--color-white);
 }
 .palette .black1 {
   background-color: var(--color-black);
