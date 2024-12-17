@@ -152,6 +152,40 @@
   }
 }
 
+// Rebecca Purple <3
+.heart {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: var(--color-rebecca-purple);
+}
+
+.heart::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
 // scrollbar
 
 ::-webkit-scrollbar {
