@@ -248,6 +248,16 @@ a {
   }
 }
 
+.pyramid2 {
+  display: none;
+}
+.pyramid:hover img.pyramid1 {
+  display: none;
+}
+.pyramid:hover img.pyramid2 {
+  display: block;
+}
+
 .done {
   margin: 2rem;
 }
