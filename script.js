@@ -73,10 +73,19 @@ const themeClassToggle = () => {
   });
 };
 
+const setCurrentYear = () => {
+  const currentYear = new Date().getFullYear();
+  const copyrightYearElement = document.getElementById("copyright-year");
+  if (copyrightYearElement) {
+    copyrightYearElement.textContent = currentYear;
+  }
+};
+
 window.addEventListener("load", function () {
   loadStateFromStorage();
   pageTransitions();
   themeToggle();
+  setCurrentYear();
 });
 
 if ("serviceWorker" in navigator) {
